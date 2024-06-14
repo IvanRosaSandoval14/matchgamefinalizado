@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatchGameMejorado4030347.MainPage">
+
+    <ScrollView>
+        <!-- VerticalStackLayout organiza sus elementos secundarios en una pila vertical-->
+        <VerticalStackLayout 
+         Spacing="25"
+         Padding="30,0"
+         VerticalOptions="Center">
+            <!-- Etiqueta Label que muestra el título "Match Game Indel".
+              FontSize especifica el tamaño de la fuente.
+              HorizontalOptions="Center" centra la etiqueta horizontalmente. -->
+            <Label Text="Match Game Indel" x:Name="LblPrincipal" FontSize="Large" HorizontalOptions="Center" />
+            <Grid x:Name="Grid1">
+                <!-- Definición de las columnas de la cuadrícula -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <!-- Botones en la cuadrícula -->
+                <Button Text="?" FontSize="36" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Column="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Column="2" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Column="3" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="3" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="2" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="3" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="3" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked"/>
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="3" Clicked="Button_Clicked"/>
+            </Grid>
+            <!-- Botón de reinicio -->
+            <Button Text="Reiniciar" x:Name="RestartButton" Clicked="RestartButton_Clicked" IsVisible="False" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
